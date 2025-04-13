@@ -24,6 +24,9 @@ function initTabNav() {
 
 initTabNav()
 
+
+
+
 function initAccordion() {
     const accordionList = document.querySelectorAll('.js-accordion dt')
     const activeClass = 'ativo'
@@ -43,6 +46,9 @@ function initAccordion() {
 }
 }
 initAccordion()
+
+
+
 
 function initScrollSuave() {
 
@@ -72,3 +78,17 @@ function scrollToSection(event) {
 }
 
 initScrollSuave()
+
+
+const sections = document.querySelectorAll('.js-scroll')
+
+function animaScroll() {
+    sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top
+        if(sectionTop < 0) {
+            section.classList.add('ativo')
+        }
+    })
+}
+
+window.addEventListener('scroll', animaScroll)
