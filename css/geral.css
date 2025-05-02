@@ -7,6 +7,9 @@ body {
     -webkit-font-smoothing: antialiased;
     background: var(--background-principal);
     color: var(--color-principal);
+    
+}
+.grid-container {
     display: grid;
     grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
@@ -162,7 +165,7 @@ ul {
 }
 
 @media(max-width: 700px) {
-    body {
+    .grid-container {
         grid-template-columns: 1fr;
     }
     .menu, .grid-section, .copy {
