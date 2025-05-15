@@ -4,7 +4,6 @@ export default function initDropdownMenu() {
 
 const dropdownMenus = document.querySelectorAll('[data-dropdown]')
 
-console.log(dropdownMenus)
 
 dropdownMenus.forEach(menu => {
 
@@ -15,6 +14,17 @@ dropdownMenus.forEach(menu => {
 
 function handleClick(event) {
     event.preventDefault()
-    this.classList.toggle('active')
+    this.classList.add('active')
+    outsideClick(this, () => {
+        this.classList.remove('active')
+    })
+}
 
+function outsideClick(element, callback) {
+    const html = document.documentElement
+    html.addEventListener('click', handleOutsideClick)
+    function handleOutsideClick(event) {
+        console.log(element)
+        callback()
+    }
 }
