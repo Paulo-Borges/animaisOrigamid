@@ -1,0 +1,13 @@
+[data-semana]::after {
+    display: inline-block;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--color-title);
+    border-radius: 50%;
+    margin-left: 4px;
+    border: 2px solid var( --color-principal);
+}
+[data-semana].aberto::after {
+    background: var(--cor-aberto);
+}

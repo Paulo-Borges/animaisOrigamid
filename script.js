@@ -6,6 +6,7 @@ import initModal from './modules/modal.js'
 import initTooltip from './modules/tooltip.js'
 import initDropdownMenu from './modules/dropdwn-menu.js'
 import initAnimaNumeros from './modules/animaNumeros.js'
+import initFuncionamento from './modules/date-object.js'
 
 
 initScrollSuave()
@@ -16,6 +17,7 @@ initModal()
 initTooltip()
 initDropdownMenu()
 initAnimaNumeros()
+initFuncionamento()
 
 
 
