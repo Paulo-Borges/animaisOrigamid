@@ -7,6 +7,7 @@ import initTooltip from './modules/tooltip.js'
 import initDropdownMenu from './modules/dropdwn-menu.js'
 import initAnimaNumeros from './modules/animaNumeros.js'
 import initFuncionamento from './modules/date-object.js'
+import animaisFetch from './modules/animais-fetch.js'
 
 
 initScrollSuave()
@@ -18,6 +19,7 @@ initTooltip()
 initDropdownMenu()
 initAnimaNumeros()
 initFuncionamento()
+animaisFetch()
 
 
 
