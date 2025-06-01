@@ -7,6 +7,7 @@ import initTooltip from './modules/tooltip.js'
 import initDropdownMenu from './modules/dropdwn-menu.js'
 import initFuncionamento from './modules/date-object.js'
 import initFetchAnimais from './modules/fetch-animais.js'
+import initfetchBitcoin from './modules/fetch-bitcoin.js'
 
 
 initScrollSuave()
@@ -18,6 +19,7 @@ initTooltip()
 initDropdownMenu()
 initFuncionamento()
 initFetchAnimais()
+initfetchBitcoin()
 
 
 
