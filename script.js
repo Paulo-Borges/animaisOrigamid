@@ -5,9 +5,8 @@ import initTabNav from './modules/tabNav.js'
 import initModal from './modules/modal.js'
 import initTooltip from './modules/tooltip.js'
 import initDropdownMenu from './modules/dropdwn-menu.js'
-import initAnimaNumeros from './modules/animaNumeros.js'
 import initFuncionamento from './modules/date-object.js'
-import animaisFetch from './modules/animais-fetch.js'
+import initFetchAnimais from './modules/fetch-animais.js'
 
 
 initScrollSuave()
@@ -17,9 +16,8 @@ initTabNav()
 initModal()
 initTooltip()
 initDropdownMenu()
-initAnimaNumeros()
 initFuncionamento()
-animaisFetch()
+initFetchAnimais()
 
 
 
