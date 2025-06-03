@@ -8,6 +8,7 @@ import initDropdownMenu from './modules/dropdwn-menu.js'
 import initFuncionamento from './modules/date-object.js'
 import initFetchAnimais from './modules/fetch-animais.js'
 import initfetchBitcoin from './modules/fetch-bitcoin.js'
+import initcountdown from './modules/countdown.js'
 
 
 initScrollSuave()
@@ -20,6 +21,7 @@ initDropdownMenu()
 initFuncionamento()
 initFetchAnimais()
 initfetchBitcoin()
+initcountdown()
 
 
 
