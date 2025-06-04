@@ -8,7 +8,7 @@ import initDropdownMenu from './modules/dropdwn-menu.js'
 import initFuncionamento from './modules/date-object.js'
 import initFetchAnimais from './modules/fetch-animais.js'
 import initfetchBitcoin from './modules/fetch-bitcoin.js'
-import initcountdown from './modules/countdown.js'
+import Countdown from './modules/countdown.js'
 
 
 initScrollSuave()
@@ -21,7 +21,21 @@ initDropdownMenu()
 initFuncionamento()
 initFetchAnimais()
 initfetchBitcoin()
-initcountdown()
+// Countdown()
+
+const diasParaONatal = new Countdown('24 december 2025 23:59:59 GMT-0300')
+const diasParaOAnoNovo = new Countdown('31 december 2025 23:59:59 GMT-0300')
+const diasParaOMeuNiver = new Countdown('14 May 2026 00:00:01 GMT-0300')
+
+console.log(diasParaONatal.total)
+
+// setInterval(() => {
+// console.log(diasParaOMeuNiver.total)
+
+// }, 5000)
+
+console.log(diasParaOAnoNovo.total)
+console.log(diasParaOMeuNiver.total)
 
 
 
