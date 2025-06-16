@@ -37,11 +37,12 @@ console.log(diasParaONatal.total)
 console.log(diasParaOAnoNovo.total)
 console.log(diasParaOMeuNiver.total)
 
+// import $ from 'jquery'
+// import _ from 'lodash'
 
 
 
-
-
+           "feat: Starting webpack and babel" 
 
 
 
