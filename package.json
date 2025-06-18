@@ -1,7 +1,6 @@
 {
   "name": "origamidanimais",
   "version": "1.0.0",
-  "main": "index.html",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development --watch"
@@ -28,5 +27,9 @@
     "eslint-plugin-import": "^2.31.0",
     "webpack": "^5.99.9",
     "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "whatwg-fetch": "^3.6.20"
   }
 }
