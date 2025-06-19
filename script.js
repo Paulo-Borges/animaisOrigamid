@@ -1,7 +1,7 @@
 import ScrollSuave from './modules/scroll-suave.js';
 import initAnimacaoScroll from './modules/scroll-animacao.js';
 import Accordion from './modules/accordion.js';
-import initTabNav from './modules/tabNav.js';
+import TabNav from './modules/tabNav.js';
 import initModal from './modules/modal.js';
 import initTooltip from './modules/tooltip.js';
 import initDropdownMenu from './modules/dropdwn-menu.js';
@@ -9,6 +9,9 @@ import initFuncionamento from './modules/date-object.js';
 import initFetchAnimais from './modules/fetch-animais.js';
 import initfetchBitcoin from './modules/fetch-bitcoin.js';
 import Countdown from './modules/countdown.js';
+
+const tabnav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
+tabnav.init();
 
 const accordion = new Accordion('[data-anime="accordion"] dt');
 accordion.init();
@@ -18,7 +21,6 @@ scrollSuave.init();
 
 
 initAnimacaoScroll();
-initTabNav();
 initModal();
 initTooltip();
 initDropdownMenu();
