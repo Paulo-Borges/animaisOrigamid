@@ -16,10 +16,13 @@ export default class accordion {
 
   init() {
     if (this.accordionList.length) {
-      this.toggleAccordion(this.accordionList[0]);
+      this.accordionList[0].classList.add(this.activeClass);
+      this.accordionList[0].nextElementSibling.classList.add(this.activeClass);
       this.addAccordionEvent();
     }
     return this;
   }
+
+
 };
 
