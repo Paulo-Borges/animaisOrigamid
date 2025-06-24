@@ -6,10 +6,9 @@ import Modal from './modules/modal.js';
 import Tooltip from './modules/tooltip.js';
 import initDropdownMenu from './modules/dropdwn-menu.js';
 import initFuncionamento from './modules/date-object.js';
-import initFetchAnimais from './modules/fetch-animais.js';
+import fetchAnimais from './modules/fetch-animais.js';
 import initfetchBitcoin from './modules/fetch-bitcoin.js';
 import Countdown from './modules/countdown.js';
-
 
 
 const modal = new Modal('[data-modal="abrir"]', '[data-modal="fechar"]', '[data-modal="container"]');
@@ -31,8 +30,8 @@ tooltip.init();
 initAnimacaoScroll();
 initDropdownMenu();
 initFuncionamento();
-initFetchAnimais();
 initfetchBitcoin();
+fetchAnimais('../../animaisapi.json', '.numeros-grid');
 // Countdown()
 
 const diasParaONatal = new Countdown('24 december 2025 23:59:59 GMT-0300');
