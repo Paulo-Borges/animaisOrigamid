@@ -5,7 +5,7 @@ import TabNav from './modules/tabNav.js';
 import Modal from './modules/modal.js';
 import Tooltip from './modules/tooltip.js';
 import DropdownMenu from './modules/dropdown-menu.js';
-import initFuncionamento from './modules/date-object.js';
+import Funcionamento from './modules/date-object.js';
 import fetchAnimais from './modules/fetch-animais.js';
 import fetchBitcoin from './modules/fetch-bitcoin.js';
 import Countdown from './modules/countdown.js';
@@ -32,8 +32,10 @@ scrollAnima.init();
 const dropdownMenu = new DropdownMenu('[data-dropdown]');
 dropdownMenu.init();
 
+const funcionamento = new Funcionamento('[data-semana]', 'aberto');
+funcionamento.init();
 
-initFuncionamento();
+
 fetchAnimais('../../animaisapi.json', '.numeros-grid');
 fetchBitcoin('https://blockchain.info/ticker', '.btc-preco');
 // Countdown()
