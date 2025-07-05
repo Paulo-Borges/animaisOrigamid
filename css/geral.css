@@ -19,6 +19,9 @@ body {
     --background-menu: #fb5;
     --color-title: #e54;
     --cor-aberto: #3f4;
+     --text-primary: #000;
+  --color-primary: #fb5;
+  --color-secondary: #e54;
 }
 img {
     display: block;
