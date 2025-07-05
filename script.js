@@ -9,6 +9,7 @@ import Funcionamento from './modules/date-object.js';
 import fetchAnimais from './modules/fetch-animais.js';
 import fetchBitcoin from './modules/fetch-bitcoin.js';
 import Countdown from './modules/countdown.js';
+import SlideNav from "./modules/slide.js";
 
 
 const modal = new Modal('[data-modal="abrir"]', '[data-modal="fechar"]', '[data-modal="container"]');
@@ -36,8 +37,13 @@ const funcionamento = new Funcionamento('[data-semana]', 'aberto');
 funcionamento.init();
 
 
-fetchAnimais('../../animaisapi.json', '.numeros-grid');
+fetchAnimais('./animaisapi.json', '.numeros-grid');
 fetchBitcoin('https://blockchain.info/ticker', '.btc-preco');
+
+
+const slide = new SlideNav(".slide", ".slide-wrapper");
+slide.init();
+slide.addControl('.custom-controls');
 // Countdown()
 
 const diasParaONatal = new Countdown('24 december 2025 23:59:59 GMT-0300');
